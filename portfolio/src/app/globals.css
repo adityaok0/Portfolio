@@ -25,3 +25,45 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.eachTimeline {
+  position: relative;
+  padding: 20px;
+}
+
+.eachTimeline::before,
+.eachTimeline::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  background-color: #007bff;
+}
+
+.eachTimeline::before {
+  top: -10px;
+  left: -11px;
+}
+.eachTimeline::after {
+  bottom: -10px;
+  left: -11px;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); /* Increased distance of slide */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation-name: slideDown;
+  animation-duration: 1.5s; /* Slower animation */
+  animation-timing-function: ease-out;
+}
+
