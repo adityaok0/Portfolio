@@ -1,10 +1,17 @@
+'use client'
 import Link from '../../node_modules/next/link'
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-5">
-  <div className="w-full p-24 flex flex-col items-center justify-center flex-grow">
+  <div className="w-full p-24 flex flex-col items-center justify-center flex-grow m-24 rounded-">
+  <motion.div
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}>
     <img src="/assets/images/Profile-min.jpg" alt="profile picture" className='rounded-full w-48'/>
+    </motion.div>
     <h1 className='text-4xl md:text-6xl font-black text-center mt-5'>ADITYA JAYARAJAN</h1>
     <h2 className='text-2xl md:text-3xl font-medium text-center'>Application Developer 2</h2>
     <p className='mt-12'>
@@ -24,7 +31,7 @@ Thank you for visiting my portfolio. Feel free to explore my projects and learn 
   </div>
   <div className=''>
     <Link href="/portfolio">
-  <button className="animate-bounce bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-4 mb-12 px-4 py-2 border border-gray-400 rounded shadow">
+  <button className="bg-accent-500 animate-bounce bg-white hover:bg-gray-100 text-gray-800 font-semibold mt-4 mb-12 px-4 py-2 border border-gray-400 rounded-full shadow">
     Visit Portfolio
 </button>
 </Link>

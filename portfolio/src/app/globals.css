@@ -37,9 +37,9 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  border: 2px solid #007bff;
+  border: 2px solid rgb(139 92 246);
   border-radius: 50%;
-  background-color: #007bff;
+  background-color: rgb(139 92 246);
 }
 
 .eachTimeline::before {

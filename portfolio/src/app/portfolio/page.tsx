@@ -3,8 +3,9 @@ import Content from "./content";
 export default function Portfolio(){
     return (
         <>
-        <div className="mx-16 mt-10">
-            <h1 className="text-3xl font-black">Timeline</h1>
+        <div className="bg-primary-500">
+        <div className="mx-16 py-3 m-20">
+            <h1 className="text-3xl font-black text-center">Timeline</h1>
             <div className="animate-slide-down">
             <div className="mt-8 border-solid border-l-violet-500 border-l-2 p-8 eachTimeline">
                 <h3 className="font-black mb-5">
@@ -65,6 +66,7 @@ export default function Portfolio(){
                 <p>asdasdasdbs askdjaskcjx ascjaksjx </p>
             </div>
             </div>
+        </div>
         </div>
         </>
     )
